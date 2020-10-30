@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Thưởng thức trên TV của bạn.",
+      "subTitle": "Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị khác..",
+      "image": "/images/misc/tab-tv.png",
+      "alt": "Tiger King on Netflix",
+      "direction": "row"
+    },
+    {
+      "id": 2,
+      "title": "Tải xuống nội dung để xem ngoại tuyến.",
+      "subTitle": "Lưu những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem..",
+      "image": "/images/misc/mobilenetflix.jpg",
+      "alt": "Watch on mobile",
+      "direction": "row-reverse"
+    },
+    {
+      "id": 3,
+      "title": "Xem ở mọi nơi.",
+      "subTitle": "Phát trực tuyến không giới hạn phim và chương trình truyền hình trên điện thoại, máy tính bảng, máy tính xách tay và TV mà không phải trả thêm phí.      ",
+      "image": "/images/misc/home-imac3.png",
+      "alt": "Money Heist on Netflix",
+      "direction": "row"
+    }
+  ]
