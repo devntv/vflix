@@ -43,7 +43,7 @@ export default function FooterContainer(){
             </Footer.Row>
             <Footer.Break />
             <RiNetflixFill className="iconNetflix"/>
-            <Footer.Text><span style={{color:"red"}}>Netflix</span> <span style={{fontSize:"17px"}}>Việt Nam</span></Footer.Text>
+            <Footer.Text><span style={{color:"red"}}>Netflix</span> <span style={{fontSize:"17px"}}>VinhPlus</span></Footer.Text>
         </Footer>
     )
 }

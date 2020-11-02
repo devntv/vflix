@@ -8,8 +8,8 @@ export const Inner = styled.div`
     display: flex;
     padding: 70px 45px;
     flex-direction: column;
-    max-width: 820px;
-    margin: auto;
+    max-width: 672px;
+    margin: 0 auto;
 `
 export const Title = styled.h1`
     color: #fff;
@@ -28,6 +28,8 @@ export const Item = styled.div`
     margin-bottom: 10px;
     width: 670px;
 
+
+
     &:first-of-type {
         margin-top: 3em;
     }
@@ -44,7 +46,7 @@ export const Header = styled.div`
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     font-size: 26px;
     font-weight: normal;
     background: #303030;

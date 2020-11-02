@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react'
-import {Title, Frame, Body, Item, Inner, Header, Container} from './styles/accordion'
+import {Title, Body, Item, Inner, Header, Container} from './styles/accordion'
 
 
 const ToogleContext = createContext();
