@@ -1,14 +1,14 @@
 import React from 'react';
 import Jumbotron from '../components/jumbotron';
 import jumboData from '../fixtures/jumbo.json'
-
+import '../globalstyles.css'
 
 
 export default function JumbotronContainer() {
   return (
     <Jumbotron.Container >
       {jumboData.map((item) => (
-        <Jumbotron key={item.id} direction={item.direction}>
+        <Jumbotron key={item.id} direction={item.direction} className="BottomBody" >
 
           <Jumbotron.Pane>
             <Jumbotron.Title>{item.title}</Jumbotron.Title>

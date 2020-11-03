@@ -1,8 +1,7 @@
 import React from 'react'
 import Footer from '../components/footer'
 import '../globalstyles.css'
-import { RiNetflixFill} from "react-icons/ri";
-
+import {MdVideoLibrary} from 'react-icons/md'
 export default function FooterContainer(){
     return (
         <Footer>
@@ -42,8 +41,8 @@ export default function FooterContainer(){
                 </Footer.Column>
             </Footer.Row>
             <Footer.Break />
-            <RiNetflixFill className="iconNetflix"/>
-            <Footer.Text><span style={{color:"red"}}>Netflix</span> <span style={{fontSize:"17px"}}>VinhPlus</span></Footer.Text>
+            <MdVideoLibrary className="iconVinhflix"/>
+            <Footer.Text><span style={{color:"red"}}>VinhFlix</span> <span style={{fontSize:"17px"}}>Việt Nam</span></Footer.Text>
         </Footer>
     )
 }
