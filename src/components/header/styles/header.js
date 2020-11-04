@@ -7,7 +7,7 @@ export const Background = styled.div`
     background: url(${({src}) => (src ? `../images/misc/${src}.jpg` : '../images/misc/homebg-vn.jpg')}) 
     top left/cover no-repeat;
     background-size: cover;
-    border-bottom: 8px solid #222;
+    border-bottom: 12px solid #222;
     &::after{
         content:'';
         position: absolute;
@@ -15,7 +15,7 @@ export const Background = styled.div`
         left: 0;
         width: 100%;
         height: 789px;
-        background: rgba(0, 0, 0, 0.7);
+         background: rgba(0, 0, 0, 0.7);
     } 
     @media (max-width: 1000px){
         &::after{

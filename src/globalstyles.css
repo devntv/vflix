@@ -11,5 +11,23 @@
     overflow: hidden;
    
 }
+.SpanFooterVflix{
+    color: #dc0510;
+    margin-left: 2px;
+}
 
+.Form{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 400px; */
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    max-width: 450px;
+    padding: 60px 68px 40px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
 /* méo hiểu kiểu gì styled-component không ăn css nên css ngoài file này */

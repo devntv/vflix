@@ -10,6 +10,7 @@ export const Container = styled.div`
     background-size:cover;
     background-attachment: fixed;
     flex-direction: column;
+ 
 
     @media (max-width: 1000px) {
     padding: 70px 30px;

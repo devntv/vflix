@@ -2,7 +2,7 @@ import React from 'react'
 import Accordion from '../components/accordion'
 import OptForm from '../components/formmail'
 import faqsData from '../fixtures/faqs.json'
-import '../globalstyles.css'
+
 
 export default function FaqsContainer() {
     return (
@@ -10,7 +10,7 @@ export default function FaqsContainer() {
             <Accordion.Title>Câu hỏi thường gặp</Accordion.Title>
             {faqsData.map(item => (
                 <Accordion.Item key={item.id}>
-                    <Accordion.Header className="transitionForm">{item.header}</Accordion.Header>
+                    <Accordion.Header>{item.header}</Accordion.Header>
                     <Accordion.Body>{item.body}</Accordion.Body>
                 </Accordion.Item>
             ))}

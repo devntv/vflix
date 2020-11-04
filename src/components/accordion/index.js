@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react'
 import {Title, Body, Item, Inner, Header, Container} from './styles/accordion'
-import '../../globalstyles.css'
+
 
 
 const ToogleContext = createContext();
@@ -49,5 +49,5 @@ Accordinon.Header = function AccordinonHeader({ children, ...restProps }) {
 
 Accordinon.Body = function AccordinonBody({ children, ...restProps }) {
     const { toogleShow } = useContext(ToogleContext)
-    return toogleShow ? <Body className="transitionForm" {...restProps}>{children}</Body> : null;
+    return toogleShow ? <Body {...restProps}>{children}</Body> : null;
 }

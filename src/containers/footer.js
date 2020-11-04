@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../components/footer'
 import '../globalstyles.css'
-import {MdVideoLibrary} from 'react-icons/md'
+import {RiVuejsLine} from 'react-icons/ri'
 export default function FooterContainer(){
     return (
         <Footer>
-            <Footer.Title>Bạn có câu hỏi? Liên hệ với Vinh đẹp trai.</Footer.Title>
+            <Footer.Title>Bạn có câu hỏi? Liên hệ VFlix.</Footer.Title>
             {/* <Footer.Break /> */}
             <Footer.Row>
                 <Footer.Column>
@@ -28,7 +28,7 @@ export default function FooterContainer(){
                     <Footer.Link href="#">Tài khoản</Footer.Link>
                     <Footer.Link href="#">Các cách xem</Footer.Link>
                     <Footer.Link href="#">Thông tin doanh nghiệp</Footer.Link>
-                    <Footer.Link href="#">Tác phẩm của Netflix</Footer.Link>
+                    <Footer.Link href="#">Tác phẩm của VinhFlix</Footer.Link>
                     {/* <Footer.Link href="#">Netflix Original</Footer.Link> */}
                 </Footer.Column>
 
@@ -41,8 +41,8 @@ export default function FooterContainer(){
                 </Footer.Column>
             </Footer.Row>
             <Footer.Break />
-            <MdVideoLibrary className="iconVinhflix"/>
-            <Footer.Text><span style={{color:"red"}}>VinhFlix</span> <span style={{fontSize:"17px"}}>Việt Nam</span></Footer.Text>
+            <RiVuejsLine className="iconVinhflix"/>
+            <Footer.Text><span className="SpanFooterVflix">VinhFlix</span> <span style={{fontSize:"17px"}}>Việt Nam</span></Footer.Text>
         </Footer>
     )
 }
