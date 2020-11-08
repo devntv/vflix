@@ -64,10 +64,9 @@ export default function SignIn() {
                     </Form.Base>
 
                     <Form.Text>
-                        New to Vinh-Flix? <Form.Link to ="/sign-up"> Dang ky ngay!</Form.Link>
+                        New to Vinh-Flix? <Form.Link to ="/sign-up"> Đăng Ký ngay!</Form.Link>
                     </Form.Text>
-                    <Form.TextSmall>
-                        this page is protected by google reCAPTCHA to ensure you are not a bot. Learn More
+                    <Form.TextSmall>Trang này được bảo vệ bởi google reCAPTCHA để đảm bảo bạn không phải là bot. Tìm hiểu thêm
                     </Form.TextSmall>
                 </Form>
             </HeaderContainer>
