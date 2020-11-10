@@ -42,7 +42,7 @@ export default function SignIn() {
             <HeaderContainer  >
                 <Form className="Form">
                     <Form.Title>Đăng Nhập</Form.Title>
-                    {error && <Form.Error>{error}</Form.Error>}
+                     {error && <Form.Error>{error}</Form.Error>}
                     <Form.Base onSubmit={handleSignin} method="POST">
                         <Form.Input
                             placeholder="Địa chỉ Email"
@@ -61,13 +61,13 @@ export default function SignIn() {
                         <Form.Submit 
                         disabled={isInValid}
                         type="submit"> Đăng nhập </Form.Submit>
-                    </Form.Base>
+                    </Form.Base> 
 
                     <Form.Text>
-                        New to Vinh-Flix? <Form.Link to ="/sign-up"> Đăng Ký ngay!</Form.Link>
+                        Bạn mới tham gia VFlix? <Form.Link to ="/sign-up"> Đăng Ký ngay.</Form.Link>
                     </Form.Text>
                     <Form.TextSmall>Trang này được bảo vệ bởi google reCAPTCHA để đảm bảo bạn không phải là bot. Tìm hiểu thêm
-                    </Form.TextSmall>
+                    </Form.TextSmall> 
                 </Form>
             </HeaderContainer>
             <FooterContainer />

@@ -5,7 +5,7 @@ export const Container = styled.div`
 
     display: flex;
     flex-direction: column;
-    // min-height: 660px;
+     min-height: 400px;
      background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     box-sizing: border-box;
@@ -14,7 +14,70 @@ export const Container = styled.div`
     max-width: 450px;
     padding: 60px 68px 40px;
     margin-bottom: 100px;
+    height: 100%;
 
+    @media (max-width: 1000px){
+        margin-bottom: 171px;
+    }
+    @media (max-width: 915px){
+        margin-bottom: 194px;
+    }
+    @media (max-width: 705px){
+         margin-bottom: 83px;
+         margin-top: 90px;
+    }
+    @media (max-width: 654px){
+        margin-bottom: 141px;
+        margin-top: 90px;
+    }
+    @media (max-width: 604px){
+        margin-bottom: 26px;
+        margin-top: 90px;
+    }
+    @media (max-width: 528px){
+        margin-bottom: 86px;
+        margin-top: 55px;
+    }
+    @media (max-width: 500px){
+        margin-bottom: 61px;
+        margin-top: 55px;
+    }
+    @media (max-width: 481px){
+        margin-bottom: 101px;
+      
+    }
+    @media (max-width: 436px){
+        margin-bottom: 83px;
+      
+    }
+    @media (max-width: 415px){
+        margin-bottom: 106px;
+      
+    }
+    @media (max-width: 390px){
+        margin-bottom: 130px;
+      
+    }
+    @media (max-width: 359px){
+        margin-bottom: 150px;
+      
+    }
+    @media (max-width: 336px){
+        margin-bottom: 132px;
+      
+    }
+    @media (max-width: 325px){
+        margin-bottom: 172px;
+      
+    }
+    @media (max-width: 315px){
+        margin-bottom: 156px;
+      
+    }
+    @media (max-width: 285px){
+        margin-bottom: 180px;
+      
+    }
     
 `
 
