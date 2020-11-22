@@ -19,7 +19,7 @@
 .Form{
     display: flex;
     flex-direction: column;
-    /* min-height: 400px; */
+    min-height: 200px !important;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     box-sizing: border-box;

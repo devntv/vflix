@@ -78,6 +78,10 @@ export const Container = styled.div`
         margin-bottom: 180px;
       
     }
+    @media (max-height: 799px){
+        margin-top: -50px;
+      
+    }
     
 `
 
