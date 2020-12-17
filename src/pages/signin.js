@@ -1,6 +1,6 @@
 import React, { useState , useContext} from 'react'
 import {FirebaseContext} from '../context/firebase'
-import FooterContainer from '../containers/footer'
+// import FooterContainer from '../containers/footer'
 import HeaderContainer from '../containers/header'
 import Form from '../components/form'
 import "../globalstyles.css"
@@ -17,6 +17,7 @@ export default function SignIn() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     // check form input , emai va passwword
+  
     const isInValid = password ==='' || addressEmail === '';
     const handleSignin =(e)=>{
         e.preventDefault();
@@ -32,6 +33,7 @@ export default function SignIn() {
                 setAddressEmail('');
                 setPassword('');
                 setError(error.message);
+            
             })
 
 

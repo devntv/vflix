@@ -15,7 +15,7 @@ export const Background = styled.div`
         left: 0;
         width: 100%;
         height: 789px;
-         background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.7);
     } 
     @media (max-width: 1000px){
         &::after{
@@ -315,3 +315,46 @@ export const ButtonLink= styled(ReactRouterLink)`
         transition: all .3s ease-in'
     }x
 `
+
+export const Feature = styled(Container)`
+    padding: 150px 0 500px 0;
+    flex-direction: column;
+    align-items: normal;
+    width: 50%;
+    @media (max-width: 1100px){
+        display: none;
+    }
+`
+export const Text = styled.p`
+    color: #fff;
+    font-size: 20px;
+    line-height: normal;
+    text-shadow: 2px 2px 4px rgba(0 ,0 ,0 ,0.45);
+    margin-top: -40px;
+`
+
+export const Link = styled.p`
+    color: #fff;
+    
+`
+export const ChildHeader = styled(Background)`
+  
+    &::after{
+        content:'';
+        position: absolute;
+        top:0;
+        left: 0;
+        background: rgba(0, 0, 0, 0);
+    } 
+`
+
+export const FeatureCallOut = styled.h3`
+    color: #fff;
+    font-size: 45px;
+    line-height: normal;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0 ,0 ,0 ,0.45);
+    margin-top: 110px;
+
+`
+

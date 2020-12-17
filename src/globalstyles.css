@@ -19,7 +19,7 @@
 .Form{
     display: flex;
     flex-direction: column;
-    min-height: 200px !important;
+    /* min-height: 200px !important; */
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     box-sizing: border-box;
@@ -29,5 +29,7 @@
     padding: 60px 68px 40px;
     margin-bottom: 100px;
     z-index: 1;
+    margin-top: 10px !important;
+    
 }
 /* méo hiểu kiểu gì styled-component không ăn css nên css ngoài file này */

@@ -16,6 +16,7 @@ export const Container = styled.div`
     margin-bottom: 100px;
     height: 100%;
 
+
     @media (max-width: 1000px){
         margin-bottom: 171px;
     }
