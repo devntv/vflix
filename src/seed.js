@@ -12,12 +12,12 @@ export function seedDatabase(firebase) {
   
     /* Series
       ============================================ */
-    // Phim tài liệu
+    // documentaries
     firebase.firestore().collection('series').add({
       id: getUUID(),
       title: 'Tiger King',
       description: 'Một cuộc khám phá về chăn nuôi mèo lớn và thế giới ngầm kỳ lạ của nó, với những nhân vật lập dị.',
-      genre: 'Phim tài liệu',
+      genre: 'documentaries',
       maturity: '18',
       slug: 'tiger-king',
     });
@@ -25,7 +25,7 @@ export function seedDatabase(firebase) {
       id: getUUID(),
       title: 'Amanda Knox',
       description: 'Amanda Marie Knox là một phụ nữ Mỹ đã ở gần 4 năm trong nhà tù ở Ý.',
-      genre: 'Phim tài liệu',
+      genre: 'documentaries',
       maturity: '12',
       slug: 'amanda-knox',
     });
@@ -33,8 +33,8 @@ export function seedDatabase(firebase) {
       id: getUUID(),
       title: 'Citizenfour',
       description:
-        'Citizenfour là một bộ phim tài liệu năm 2014 của đạo diễn Laura Poitras, liên quan đến Edward Snowden và vụ bê bối gián điệp của NSA.',
-      genre: 'Phim tài liệu',
+        'Citizenfour là một bộ documentaries năm 2014 của đạo diễn Laura Poitras, liên quan đến Edward Snowden và vụ bê bối gián điệp của NSA.',
+      genre: 'documentaries',
       maturity: '12',
       slug: 'citizenfour',
     });
@@ -43,7 +43,7 @@ export function seedDatabase(firebase) {
       title: 'Super Size Me',
       description:
         "Thử nghiệm xã hội của đạo diễn Morgan Spurlock trong lĩnh vực ẩm thực thức ăn nhanh cho thấy anh ta đang cố gắng duy nhất chỉ ăn thức ăn từ McDonalds",
-      genre: 'Phim tài liệu',
+      genre: 'documentaries',
       maturity: '12',
       slug: 'super-size-me',
     });
@@ -52,7 +52,7 @@ export function seedDatabase(firebase) {
       title: 'Man on Wire',
       description:
         "Nhà làm phim James Marsh tái hiện một cách xuất sắc màn đóng thế liều mạng của Philippe Petit năm 1974 đi trên dây ngang qua Tòa tháp đôi.",
-      genre: 'Phim tài liệu',
+      genre: 'documentaries',
       maturity: '12',
       slug: 'man-on-wire',
     });
@@ -63,7 +63,7 @@ export function seedDatabase(firebase) {
       title: 'The Office',
       description:
         'Một nhóm nhân viên văn phòng nhẹ nhàng trải qua những hành động vui nhộn tại Scranton, Pennsylvania, chi nhánh của Công ty Giấy Dunder Mifflin.',
-      genre: 'Phim hài',
+      genre: 'comedies',
       maturity: '15',
       slug: 'the-office',
     });
@@ -72,7 +72,7 @@ export function seedDatabase(firebase) {
       title: 'Arrested Development',
       description:
         'Gia đình Bluth, từng là một tên tuổi nổi bật trong ngành kinh doanh, mất tất cả sau khi tộc trưởng bị kết án vì tội lừa đảo.',
-      genre: 'Phim hài',
+      genre: 'comedies',
       maturity: '15',
       slug: 'arrested-development',
     });
@@ -81,7 +81,7 @@ export function seedDatabase(firebase) {
       title: 'Curb Your Enthusiasm',
       description:
         'Larry David, một nhà văn và nhà sản xuất truyền hình nổi tiếng, vướng vào nhiều hành vi sai trái khác nhau với bạn bè và đồng nghiệp nổi tiếng của mình ở Los Angeles.',
-      genre: 'Phim hài',
+      genre: 'comedies',
       maturity: '15',
       slug: 'curb-your-enthusiasm',
     });
@@ -90,7 +90,7 @@ export function seedDatabase(firebase) {
       title: 'Family Guy',
       description:
         'Peter Griffin và gia đình gồm hai thiếu niên, một chú chó thông minh, một đứa bé quỷ quái và vợ của anh ta thấy mình trong một số tình huống vui nhộn nhất.',
-      genre: 'Phim hài',
+      genre: 'comedies',
       maturity: '15',
       slug: 'family-guy',
     });
@@ -99,18 +99,18 @@ export function seedDatabase(firebase) {
       title: 'South Park',
       description:
         'Bốn cậu bé đang đi học, Stan Marsh, Kyle Broflovski, Eric Cartman và Kenny McCormick, sống ở South Park bắt đầu vào nhiều cuộc phiêu lưu khác nhau.',
-      genre: 'Phim hài',
+      genre: 'comedies',
       maturity: '15',
       slug: 'south-park',
     });
   
-    // Trẻ em
+    // children
     firebase.firestore().collection('series').add({
       id: getUUID(),
       title: 'Peppa Pig',
       description:
         'Peppa, một chú lợn mầm non đang đi học, tham gia nhiều hoạt động năng nổ. Cô ấy học điều gì đó mới mỗi ngày và có rất nhiều niềm vui với gia đình và bạn bè của cô ấy.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'peppa-pig',
     });
@@ -119,7 +119,7 @@ export function seedDatabase(firebase) {
       title: 'Dora The Explorer',
       description:
         'Dora, một cô bé bảy tuổi gốc Mỹ Latinh, tham gia vào nhiều cuộc phiêu lưu trong vùng hoang dã cùng với người bạn Boots, một con khỉ và nhiều công cụ hữu ích và thú vị.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'dora-the-explorer',
     });
@@ -128,7 +128,7 @@ export function seedDatabase(firebase) {
       title: 'PAW Patrol',
       description:
         'Sáu chú chó con dũng cảm, được cầm đầu bởi một cậu bé 10 tuổi am hiểu công nghệ, Ryder, cùng nhau hợp tác để hoàn thành các nhiệm vụ giải cứu cấp cao để bảo vệ các cư dân của cộng đồng Adventure Bay.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'paw-patrol',
     });
@@ -136,8 +136,8 @@ export function seedDatabase(firebase) {
       id: getUUID(),
       title: 'Arthur',
       description:
-        'Arthur Read thể hiện cho trẻ em cách đối mặt với những tổn thương và thử thách thời thơ ấu như bài tập về nhà, giáo viên và những kẻ bắt nạt.',
-      genre: 'Trẻ em',
+        'Arthur Read thể hiện cho children cách đối mặt với những tổn thương và thử thách thời thơ ấu như bài tập về nhà, giáo viên và những kẻ bắt nạt.',
+      genre: 'children',
       maturity: '0',
       slug: 'arthur',
     });
@@ -146,18 +146,18 @@ export function seedDatabase(firebase) {
       title: 'SpongeBob',
       description:
         'Một loài bọt biển màu vàng có tên là SpongeBob SquarePants sống ở thành phố Bikini Bottom sâu trong Thái Bình Dương. ',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'spongebob',
     });
   
-    // Tội ác
+    // crime
     firebase.firestore().collection('series').add({
       id: getUUID(),
       title: 'Making a Murderer',
       description:
-        'Được miễn tội sau gần hai thập kỷ ngồi tù vì Tội ác mà anh ta không phạm phải, Steven Avery đã đệ đơn kiện Quận Manitowoc, Wis., Và một số cá nhân liên quan đến vụ bắt giữ anh ta.',
-      genre: 'Tội ác',
+        'Được miễn tội sau gần hai thập kỷ ngồi tù vì crime mà anh ta không phạm phải, Steven Avery đã đệ đơn kiện Quận Manitowoc, Wis., Và một số cá nhân liên quan đến vụ bắt giữ anh ta.',
+      genre: 'crime',
       maturity: '18',
       slug: 'making-a-murderer',
     });
@@ -166,7 +166,7 @@ export function seedDatabase(firebase) {
       title: 'Long Shot',
       description:
         'Một người đàn ông vô tội bị buộc tội giết người, dẫn luật sư của anh ta vào một cuộc rượt đuổi hoang dã để xác nhận bằng chứng ngoại phạm của anh ta bằng cách sử dụng cảnh quay thô từ một chương trình truyền hình.',
-      genre: 'Tội ác',
+      genre: 'crime',
       maturity: '18',
       slug: 'long-shot',
     });
@@ -175,7 +175,7 @@ export function seedDatabase(firebase) {
       title: 'The Confession Killer',
       description:
         'Henry Lee Lucas là một kẻ giết người hàng loạt người Mỹ bị kết án với tội danh kéo dài từ năm 1960 đến năm 1983. Hắn bị kết tội giết mười một người và bị kết án tử hình vì tội giết Debra Jackson, mặc dù bản án của hắn sẽ được giảm xuống tù chung thân vào năm 1998.',
-      genre: 'Tội ác',
+      genre: 'crime',
       maturity: '18',
       slug: 'the-confession-killer',
     });
@@ -184,7 +184,7 @@ export function seedDatabase(firebase) {
       title: 'The Innocent Man',
       description:
         'Henry Lee Lucas là một kẻ giết người hàng loạt người Mỹ bị kết án với tội danh kéo dài từ năm 1960 đến năm 1983. Hắn bị kết tội giết 11 người và bị kết án tử hình vì tội giết Debra Jackson.',
-      genre: 'Tội ác',
+      genre: 'crime',
       maturity: '18',
       slug: 'the-innocent-man',
     });
@@ -193,7 +193,7 @@ export function seedDatabase(firebase) {
       title: 'The Staircase',
       description:
         "Năm 2001, vợ của tiểu thuyết gia Michael Peterson qua đời, và ông tuyên bố bà đã chết sau khi ngã cầu thang tại nhà của họ. Tuy nhiên, giám định viên y tế xác định rằng cô đã bị đánh bằng hung khí",
-      genre: 'Tội ác',
+      genre: 'crime',
       maturity: '18',
       slug: 'the-staircase',
     });
@@ -341,13 +341,13 @@ export function seedDatabase(firebase) {
       slug: 'zodiac',
     });
   
-    // Trẻ em
+    // children
     firebase.firestore().collection('films').add({
       id: getUUID(),
       title: 'Hotel Transylvania',
       description:
         'Dracula, người sở hữu một khu nghỉ dưỡng cao cấp dành cho quái vật, cố gắng giữ cho con gái mình không yêu Jonathan, một con người.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'hotel-transylvania',
     });
@@ -356,7 +356,7 @@ export function seedDatabase(firebase) {
       title: 'Despicable Me',
       description:
         'Gru, một kẻ chủ mưu tội phạm, nhận ba đứa trẻ mồ côi làm con tốt để thực hiện vụ trộm lớn nhất trong lịch sử. Cuộc đời anh có một bước ngoặt bất ngờ khi các cô gái nhỏ coi anh như một người cha tiềm năng của chúng.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'despicable-me',
     });
@@ -365,7 +365,7 @@ export function seedDatabase(firebase) {
       title: 'Frozen',
       description:
         'Anna bắt đầu một cuộc hành trình với một người băng, Kristoff, và con tuần lộc của anh ta, Sven, để tìm em gái của cô, Elsa, người có quyền năng biến bất kỳ vật thể hoặc người nào thành băng.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'frozen',
     });
@@ -374,7 +374,7 @@ export function seedDatabase(firebase) {
       title: 'Spirited Away',
       description:
         'Trong bộ phim hoạt hình này của đạo diễn Nhật Bản Hayao Miyazaki, cô bé 10 tuổi Chihiro (Rumi Hiiragi) và bố mẹ (Takashi Naitô, Yasuko Sawaguchi) tình cờ gặp một công viên giải trí dường như bị bỏ hoang.',
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'spirited-away',
     });
@@ -383,7 +383,7 @@ export function seedDatabase(firebase) {
       title: 'Up',
       description:
         "Carl, một góa phụ già, bắt đầu cuộc phiêu lưu trong ngôi nhà bay của mình để tìm kiếm Thác Paradise, điểm đến mơ ước của vợ anh.",
-      genre: 'Trẻ em',
+      genre: 'children',
       maturity: '0',
       slug: 'up',
     });
@@ -435,13 +435,13 @@ export function seedDatabase(firebase) {
       slug: 'the-silence-of-the-lambs',
     });
   
-    // Lãng mạn
+    // romance
     firebase.firestore().collection('films').add({
       id: getUUID(),
       title: 'A Star Is Born',
       description:
         'Sau khi yêu nghệ sĩ đang gặp khó khăn Ally, Jackson, một nhạc sĩ, đã dụ dỗ cô theo đuổi ước mơ của mình, trong khi anh chiến đấu với chứng nghiện rượu và những con quỷ cá nhân của mình.',
-      genre: 'Lãng mạn',
+      genre: 'romance',
       maturity: '15',
       slug: 'a-star-is-born',
     });
@@ -450,7 +450,7 @@ export function seedDatabase(firebase) {
       title: 'Blue Valentine',
       description:
         'Dean và Cynthia đã kết hôn với một cô con gái và cuộc hôn nhân của họ sắp đổ vỡ. Cả hai đều đến từ những gia đình rối loạn chức năng và đấu tranh để hiểu mối quan hệ của họ.',
-      genre: 'Lãng mạn',
+      genre: 'romance',
       maturity: '15',
       slug: 'blue-valentine',
     });
@@ -459,7 +459,7 @@ export function seedDatabase(firebase) {
       title: 'La La Land',
       description:
         'Sebastian (Ryan Gosling) và Mia (Emma Stone) bị thu hút bởi mong muốn chung của họ là làm những gì họ yêu thích. Nhưng khi thành công tăng lên, họ phải đối mặt với những quyết định bắt đầu...',
-      genre: 'Lãng mạn',
+      genre: 'romance',
       maturity: '15',
       slug: 'la-la-land',
     });
@@ -468,7 +468,7 @@ export function seedDatabase(firebase) {
       title: 'The Notebook',
       description:
         "Duke đọc câu chuyện của Allie và Noah, hai người tình bị chia cắt bởi số phận, với bà Hamilton, một bà lão mắc bệnh Alzheimer, hàng ngày trong sổ tay của anh.",
-      genre: 'Lãng mạn',
+      genre: 'romance',
       maturity: '15',
       slug: 'the-notebook',
     });
@@ -477,7 +477,7 @@ export function seedDatabase(firebase) {
       title: 'Titanic',
       description:
         'Rose 17 tuổi xuất thân từ một gia đình quý tộc và đã được lập gia đình. Khi lên tàu Titanic, cô gặp Jack Dawson, một nghệ sĩ, và yêu anh ta.',
-      genre: 'Lãng mạn',
+      genre: 'romance',
       maturity: '15',
       slug: 'titanic',
     });

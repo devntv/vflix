@@ -64,3 +64,12 @@ export const Item = styled.li`
         margin-right: 0;
     }
 `
+export const Warning = styled.p`
+    font-size: 14px;
+    margin-top: 80px;
+    color: red;
+    display: flex;
+    color: #f00946;
+    
+`
+

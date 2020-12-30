@@ -7,14 +7,19 @@ export const Background = styled.div`
     background: url(${({src}) => (src ? `../images/misc/${src}.jpg` : '../images/misc/homebg-vn.jpg')}) 
     top left/cover no-repeat;
     background-size: cover;
-    border-bottom: 12px solid #222;
+   // border-bottom: 12px solid #222;
+
+    @media(max-width: 1100px){
+        ${({responsive}) => responsive &&  `background: none;`}
+    }
+
     &::after{
         content:'';
         position: absolute;
         top:0;
         left: 0;
         width: 100%;
-        height: 789px;
+        height: 135%;
         background: rgba(0, 0, 0, 0.7);
     } 
     @media (max-width: 1000px){
@@ -24,7 +29,7 @@ export const Background = styled.div`
             top:0;
             left: 0;
             width: 100%;
-            height: 860px;
+            height: 145%;
             background: rgba(0, 0, 0, 0.6);
         }
     }
@@ -35,7 +40,7 @@ export const Background = styled.div`
             top:0;
             left: 0;
             width: 100%;
-            height: 883px;
+            height: 144%;
             background: rgba(0, 0, 0, 0.6);
         }
     }
@@ -266,6 +271,11 @@ export const Frame = styled.div`
 
 `
 
+export const Group = styled.div`
+    display: flex;
+    align-items: center;
+`
+
 export const Container = styled.div`
     display: flex;
     margin: 0 56px;
@@ -280,6 +290,146 @@ export const Container = styled.div`
 
     @media (max-width: 1000px){
         margin: 0 30px;
+    }
+`
+
+export const Picture = styled.button`
+    background: url(${({src}) => src});
+    background-size: contain;
+    border: 1px solid red;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+`
+export const Search = styled.div`
+    display: flex;
+    align-items: center;
+
+    svg{
+        color: white;
+        cursor: pointer;
+    }
+     
+    @media (max-width: 700px){
+        display: none;
+    }
+`
+export const SearchIcon = styled.button`
+    cursor: pointer;
+    background-color: transparent;
+    border:0;
+    
+    img{
+        filter: brightness(0) invert(1);
+        width: 20px;
+      
+    }
+`
+export const PlayButton = styled.button`
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  background-color: #e6e6e6;
+  color: #000;
+  border-width: 0;
+  padding: 10px 20px 30px 20px;
+  border-radius: 5px;
+  max-width: 160px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 1px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  display:flex;
+  justify-content: center;
+
+    &:hover{
+        background-color: #ff1e1e;
+        color: white;
+    }
+`
+
+export const SearchInput = styled.input`
+    background-color: #44444459;
+    color: white;
+    border: 1px solid #cac2c2;
+    border-radius: 2px;
+    margin-right: 10px;
+    transition: all 0.3s;
+    height: 28px;
+    font-size: 14px;
+    margin-left: ${({active}) => (active === true ? '10px': '0') };
+    padding: ${({active}) => (active === true ? '0 10px': '0') };
+    opacity: ${({active}) => (active === true ? '1': '0') };
+    width: ${({active}) => (active === true ? '200px': '0') };
+`
+
+export const Link = styled.p`
+    color: ${({active}) => (active=== 'true'? '#ff915c' :'#fff')};
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: ${({active}) =>(active === 'true' ? '700': 'normal')};
+    cursor: pointer;
+    border-bottom: ${({active}) => (active === 'true' ? '2px solid red': 'none')};
+    border-radius: 3px;
+    transition: all .2s linear;
+    &:hover{
+      
+        color: #ff6c1a;
+    }
+    &:last-of-type{
+        margin-right: 0;
+    }
+`
+
+export const Dropdown = styled.div`
+    display: none;
+    background-color: black;
+    position: absolute;
+    padding: 10px;
+    width: 180px;
+    top: 32px;
+    right: -35px;
+
+    ${Group}: last-of-type ${Link}{
+        cursor: pointer;
+    }
+
+    ${Group} {
+        margin-bottom: 16px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        ${Link}, ${Picture}{
+            cursor: default;
+        }
+    }
+
+    button{
+        margin-right: 10px;
+    }
+
+    p{
+        font-size: 14px;
+        margin-bottom:0;
+        margin-top: 0;
+    }
+`
+
+export const Profile = styled.div`
+    display: flex;
+    align-items: center;
+    marrgin-left: 20px;
+    position: relative;
+
+    button{
+        cursor: pointer;
+       
+    }
+
+    &:hover > ${Dropdown} {
+        display: flex;
+        flex-direction: column;
     }
 `
 
@@ -333,10 +483,7 @@ export const Text = styled.p`
     margin-top: -40px;
 `
 
-export const Link = styled.p`
-    color: #fff;
-    
-`
+
 export const ChildHeader = styled(Background)`
   
     &::after{

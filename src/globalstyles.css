@@ -1,3 +1,6 @@
+*:focus{
+    outline:none !important;
+}
 .iconVinhflix{
     font-size: 35px;
     color: red;
@@ -16,6 +19,12 @@
     margin-left: 2px;
 }
 
+.btnn{
+   
+    height: 100px;
+    transition: background-color 0.5s ease;
+}
+
 .Form{
     display: flex;
     flex-direction: column;
@@ -32,4 +41,6 @@
     margin-top: 10px !important;
     
 }
+
+
 /* méo hiểu kiểu gì styled-component không ăn css nên css ngoài file này */

@@ -17,6 +17,7 @@ export const Spinner = styled.div`
    width: 100%;
    height: 100%;
    background-color: black;
+   background-image: url(images/misc/bg-grid.jpg);
    z-index: 9999;
 
    :after {
