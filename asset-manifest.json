@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/vinh-flix/static/css/main.29221621.chunk.css",
+    "main.js": "/vinh-flix/static/js/main.4487e9b8.chunk.js",
+    "main.js.map": "/vinh-flix/static/js/main.4487e9b8.chunk.js.map",
+    "runtime-main.js": "/vinh-flix/static/js/runtime-main.60aa8ac9.js",
+    "runtime-main.js.map": "/vinh-flix/static/js/runtime-main.60aa8ac9.js.map",
+    "static/css/2.764ccc25.chunk.css": "/vinh-flix/static/css/2.764ccc25.chunk.css",
+    "static/js/2.5b9647b7.chunk.js": "/vinh-flix/static/js/2.5b9647b7.chunk.js",
+    "static/js/2.5b9647b7.chunk.js.map": "/vinh-flix/static/js/2.5b9647b7.chunk.js.map",
+    "index.html": "/vinh-flix/index.html",
+    "precache-manifest.50e457f5bdb5a871957c2f4a243608f2.js": "/vinh-flix/precache-manifest.50e457f5bdb5a871957c2f4a243608f2.js",
+    "service-worker.js": "/vinh-flix/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/vinh-flix/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.29221621.chunk.css.map": "/vinh-flix/static/css/main.29221621.chunk.css.map",
+    "static/js/2.5b9647b7.chunk.js.LICENSE.txt": "/vinh-flix/static/js/2.5b9647b7.chunk.js.LICENSE.txt",
+    "static/media/VinhFlix.png": "/vinh-flix/static/media/VinhFlix.19aeb3b3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60aa8ac9.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.5b9647b7.chunk.js",
+    "static/css/main.29221621.chunk.css",
+    "static/js/main.4487e9b8.chunk.js"
+  ]
+}
