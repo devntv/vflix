@@ -23,7 +23,7 @@ OptForm.Button = function OptFormButton({children, ...restProps}){
     return (
         <Button {...restProps} onClick={handleBtnLoading} disabled={btnLoading}>
             {btnLoading && (<Loader type="TailSpin" color="orange"  height={40}  width={60}/>)}
-            {btnLoading && <span style={{color:"orange"}}>VinhFlix hiện đang bảo trì...</span>}
+            {btnLoading && <span style={{color:"orange"}}>VFlix đang bảo trì..</span>}
             {!btnLoading && <span> {children} <img src="/images/icons/toggle-right.png" alt="try it now"/></span> }      
         </Button>
     )
