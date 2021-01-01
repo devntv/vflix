@@ -19,9 +19,10 @@ export default function FaqsContainer() {
 
             <OptForm>
                 <OptForm.Text>Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</OptForm.Text>
-                <OptForm.Break />
+             
                 <OptForm.Input placeholder="Nhập địa chỉ Email" />
                 <OptForm.Button>dùng thử miễn phí</OptForm.Button>
+                <OptForm.Break />
             </OptForm>
         </Accordion>
     )

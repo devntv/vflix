@@ -7,7 +7,7 @@ export const Background = styled.div`
     background: url(${({src}) => (src ? `../images/misc/${src}.jpg` : '../images/misc/homebg-vn.jpg')}) 
     top left/cover no-repeat;
     background-size: cover;
-   // border-bottom: 12px solid #222;
+    border-bottom: 12px solid #222;
     @media(max-width: 1100px){
         ${({responsive}) => responsive &&  `background: none;`}
     }
@@ -18,7 +18,7 @@ export const Background = styled.div`
         top:0;
         left: 0;
         width: 100%;
-        height: 135%;
+        height: 130%;
         background: rgba(0, 0, 0, 0.7);
     } 
     @media (max-width: 1000px){
