@@ -8,6 +8,7 @@ import JumbotronContainer from '../containers/jumbotron'
 
 
 export default function Home() {
+  
     return (
         <>
             <HeaderContainer>
@@ -22,7 +23,7 @@ export default function Home() {
                         <OptForm.Text>Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</OptForm.Text>
                         <OptForm.Break />
                         <OptForm.Input placeholder="Nhập địa chỉ Email" />
-                        <OptForm.Button>dùng thử miễn phí</OptForm.Button>
+                        <OptForm.Button>DÙNG THỬ MIỄN PHÍ</OptForm.Button>
                     </OptForm>
                     <OptForm.Text>Chỉ các thành viên mới mới đủ điều kiện nhận được ưu đãi này.</OptForm.Text>
                 </Feature>

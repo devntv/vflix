@@ -5,8 +5,8 @@ export const Container = styled.div`
 
     display: flex;
     flex-direction: column;
-     min-height: 400px;
-     background-color: rgba(0, 0, 0, 0.75);
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     box-sizing: border-box;
     width: 100%;

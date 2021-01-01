@@ -42,10 +42,10 @@ export const Button = styled.button`
     align-items: center;
     //height: 100%;
     height: 70px;
-   box-sizing: border-box;
+    box-sizing: border-box;
     color: #fff;
     background: #dc0510;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     padding: 0 32px;
     font-size: 20px;
     //font-weight: bold;
@@ -53,6 +53,10 @@ export const Button = styled.button`
     cursor: pointer;
     border-top-right-radius: 4px;
     
+    &:disabled {
+        opacity: ${({disabled}) =>(disabled === true ? 0.6 : 0)}      
+    }
+
     &:hover{
         background: #f40612;
         transition: all .3s ease-in;

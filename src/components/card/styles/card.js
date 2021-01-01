@@ -128,7 +128,7 @@ export const Content = styled.div`
 
 
 export const Maturity = styled.div`
-    background-color: ${({ rating }) => (rating >= 15 ? '#f44336' : '#2f9600')};
+    background-color: ${({ rating }) => (rating >= 15 ? '#f44336' : '#00c6ff')};
     border-radius: 15px;
     width: 28px;
     line-height: 28px;
@@ -160,7 +160,7 @@ export const Item = styled.div`
     cursor: pointer;
     border: 2px solid black;
     transition: transform 0.3s;
-
+    margin-bottom: 0;
     &:hover {
         transform: scale(1.1);
         border: 2px solid #fff;

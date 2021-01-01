@@ -28,7 +28,7 @@ export default function SignUp() {
         result.user
           .updateProfile({
             displayName: firstName,
-            photoURL: Math.floor(Math.random()*5) +1,
+            photoURL: Math.trunc(Math.random() * 5) +1,
           }).then(()=>{
             history.push(ROUTES.BROWSE)
           })
@@ -49,7 +49,6 @@ export default function SignUp() {
                     <Form.Input placeholder ='Email' value={emailAddress} onChange={({target}) => setEmailAddress(target.value)}/>
                     <Form.Input type="password" value ={password} autoComplete="off" placeholder ='Mật khẩu' onChange={({target}) => setPassword(target.value)}/>
                     <Form.Submit disabled = {isInValid} type ="submit" > Đăng ký </Form.Submit>
-
                     <Form.Text>
                         Bạn đã có tài khoản? <Form.Link to="/sign-in"> đăng nhập ngay</Form.Link>
                     </Form.Text>

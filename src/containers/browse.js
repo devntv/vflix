@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import Fuse from 'fuse.js';
 import { SelectProfileContainer } from './profile';
 import { FirebaseContext } from '../context/firebase';
 import Loading from '../components/loading';
@@ -7,6 +8,8 @@ import * as ROUTES from '../constants/routes'
 import VfLIX from '../VinhFlix.png'
 import Card from '../components/card';
 import {FaPlayCircle} from 'react-icons/fa';
+import FooterContainer from './footer'
+import Player from '../components/player';
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState('series');
@@ -27,6 +30,19 @@ export function BrowseContainer({ slides }) {
     setSlideRows(slides[category]);
   },[slides, category])
 
+  useEffect(()=>{
+    const fuse = new Fuse(slideRows, {
+      keys: ['data.description','data.title', 'data.genre']
+    });
+    const results = fuse.search(searchTerm).map(({item}) => item);
+
+    if(slideRows.length > 0 && searchTerm.length > 3 && results.length > 0){
+      setSlideRows(results);
+    } else{
+      setSlideRows(slides[category]);
+    }
+  },[searchTerm])
+
   return profile.displayName ? (
     <>
     {loading ? (
@@ -37,9 +53,11 @@ export function BrowseContainer({ slides }) {
                 <Header.Group>
                 <Header.Logo to ={ROUTES.HOME} src={VfLIX} alt ="vinh-flix"  />
                 <Header.TextLink active={category === 'series' ? 'true' : 'false'} onClick={()=>setCategory('series')}>
-                Phim
+                  Series
                 </Header.TextLink>
-                <Header.TextLink active={category === 'films' ? 'true' : 'false'}  onClick={()=>setCategory('films')}>Series</Header.TextLink>
+                <Header.TextLink active={category === 'films' ? 'true' : 'false'}  onClick={()=>setCategory('films')}>
+                  Phim
+                </Header.TextLink>
                 </Header.Group>
                 <Header.Group>
                   <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
@@ -82,11 +100,15 @@ export function BrowseContainer({ slides }) {
               ))}   
               </Card.Entities>
               <Card.Feature category={category}>
-                <p>hello</p>
+                <Player>
+                  <Player.Button/>
+                  <Player.Video src="/videos/bunny.mp4"/>
+                </Player>
               </Card.Feature>
             </Card>
         ))}
       </Card.Group>
+      <FooterContainer />
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />

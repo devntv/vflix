@@ -8,7 +8,6 @@ export const Background = styled.div`
     top left/cover no-repeat;
     background-size: cover;
    // border-bottom: 12px solid #222;
-
     @media(max-width: 1100px){
         ${({responsive}) => responsive &&  `background: none;`}
     }
@@ -369,10 +368,9 @@ export const Link = styled.p`
     font-weight: ${({active}) =>(active === 'true' ? '700': 'normal')};
     cursor: pointer;
     border-bottom: ${({active}) => (active === 'true' ? '2px solid red': 'none')};
-    border-radius: 3px;
-    transition: all .2s linear;
+    transition: all .4s linear;
     &:hover{
-      
+        
         color: #ff6c1a;
     }
     &:last-of-type{

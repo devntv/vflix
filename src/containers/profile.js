@@ -6,6 +6,7 @@ import Profiles from '../components/profiles';
 import { ImNotification } from 'react-icons/im';
 
 export function SelectProfileContainer({user, setProfile}){
+    
     return <>
         <Header background={false}>
             <Header.Frame>
@@ -21,7 +22,7 @@ export function SelectProfileContainer({user, setProfile}){
                     <Profiles.Name>{user.displayName}</Profiles.Name>
                 </Profiles.User>
             </Profiles.List>
-            <Profiles.Warning><ImNotification style={{marginRight:'5px', color: 'yellow'}}/>Lần đầu đăng nhập nếu website hiển thị sai nguyên nhân có thể do trình duyệt. Xin vui lòng nhấn F5 để nội dung hiển thị lại tốt nhất.</Profiles.Warning>
+            <Profiles.Warning><ImNotification style={{marginRight:'5px', color: 'yellow'}}/>Lần đầu đăng nhập, khi click vào avatar nếu website hiển thị sai nguyên nhân có thể do trình duyệt. Vui lòng nhấn F5 để nội dung hiển thị lại tốt nhất.</Profiles.Warning>
         </Profiles>
     </>
     

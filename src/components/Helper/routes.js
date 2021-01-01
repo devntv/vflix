@@ -3,16 +3,13 @@ import {Route, Redirect} from 'react-router-dom';
 
 export  function IsUserRedirect({user, children, loggedInPath, ...rest}) {
     return (
-        <Route {...rest} render={()=>{ 
-            console.log('user', user)
-            if(!user){
-                
+        <Route {...rest} render={()=>{    
+            if(!user){          
                 return children;
             }
-            if(user){
-              
+            if(user){             
                 return (
-                    <Redirect to ={{pathname : loggedInPath}} />
+                    <Redirect to ={{pathname : loggedInPath,}} />
                 );
             }  
              return null;
