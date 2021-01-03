@@ -329,7 +329,7 @@ export const PlayButton = styled.button`
   background-color: #e6e6e6;
   color: #000;
   border-width: 0;
-  padding: 10px 20px 30px 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 5px;
   max-width: 160px;
   font-weight: bold;
