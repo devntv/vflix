@@ -9,13 +9,18 @@ export const Container = styled.div`
 export const Title = styled.h1`
     color: #fff;
     z-index: 1;
-    max-width: 640px;
-    font-size: 50px;
-    font-weight: 500;
+    max-width: 800px;
+    font-size: 64px;
+    font-weight: 600;
     margin: auto;
+    text-align: center;
 
     @media (max-width: 605px){
         font-size: 35px;
+    }
+    @media (max-width: 1000px){
+        max-width: 540px;
+        font-size: 42px;
     }
 `
 export const SubTitle = styled.h2`
@@ -24,9 +29,10 @@ export const SubTitle = styled.h2`
     max-width: 640px;
     font-size: 26px;
     font-weight: normal;
-    margin: 16px auto;
+    margin: 10px auto;
 
     @media (max-width: 605px){
         font-size: 18px;
     }
+   
 `

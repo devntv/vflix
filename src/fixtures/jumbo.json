@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Thưởng thức trên TV của bạn.",
-      "subTitle": "Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị khác..",
+      "subTitle": "Xem trên TV thông minh, Playstation, Xbox, Chromecast, Apple TV, đầu phát Blu-ray và nhiều thiết bị khác.",
       "image": "/images/misc/tab-tv.png",
       "alt": "Tiger King on Netflix",
       "direction": "row"
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "title": "Tải xuống nội dung để xem ngoại tuyến.",
-      "subTitle": "Lưu những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem..",
+      "subTitle": "Lưu những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.",
       "image": "/images/misc/mobilenetflix.jpg",
       "alt": "Watch on mobile",
       "direction": "row-reverse"
@@ -22,5 +22,13 @@
       "image": "/images/misc/home-imac3.png",
       "alt": "Money Heist on Netflix",
       "direction": "row"
+    },
+    {
+      "id": 4,
+      "title": "Tạo hồ sơ cho trẻ em..",
+      "subTitle": "Đưa các em vào những cuộc phiêu lưu với nhân vật được yêu thích trong một không gian riêng. Tính năng này đi kèm miễn phí với tư cách thành viên của bạn.",
+      "image": "/images/misc/vfixChildren.png",
+      "alt": "Money Heist on Netflix",
+      "direction": "row-reverse"
     }
   ]

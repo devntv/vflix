@@ -95,7 +95,7 @@ export const Text = styled.p`
     color: #fff;
     text-align: center;
     z-index: 1;
-
+    margin-top: 10px;
     @media (max-width: 705px){
         font-size: 16px;
         line-height: 22px;
