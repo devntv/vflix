@@ -19,7 +19,11 @@ export const Background = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        // background: rgba(0, 0, 0, 0.8);
+        background: rgba(0,0,0,.4);
+        // background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+        background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+        background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
     } 
    
     @media(max-width: 1100px){
@@ -196,11 +200,14 @@ export const Logo = styled.img`
     height: 42px;
     width: 120px;
     margin-right: 40px;
-    z-index: 1;
+    z-index: 999;
+    position: relative;
 
     @media (min-width: 1449px){
-        height: 45px;
-        width: 168px;
+        height: 55px;
+        width: 175px;
+        z-index: 999;
+        position: relative;
     }
 
 `

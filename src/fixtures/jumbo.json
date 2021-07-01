@@ -13,7 +13,12 @@
       "subTitle": "Lưu những nội dung yêu thích một cách dễ dàng và luôn có thứ để xem.",
       "image": "/images/misc/mobilenetflix.jpg",
       "alt": "Watch on mobile",
-      "direction": "row-reverse"
+      "direction": "row-reverse",
+      "slide": true,
+      "slideGif": "/images/bodySlide/vinhFlixGif.gif",
+      "slideImg":"/images/bodySlide/boxshot.png",
+      "slideContent": "Cậu bé mất tích",
+      "slideSubContent": "Đang tải xuống..."
     },
     {
       "id": 3,

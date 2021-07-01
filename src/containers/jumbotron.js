@@ -16,7 +16,15 @@ export default function JumbotronContainer() {
           </Jumbotron.Pane>
 
           <Jumbotron.Pane>
-          <Jumbotron.Image src={item.image} alt={item.alt} />
+            <Jumbotron.Image src={item.image} alt={item.alt} />
+            {item.slide ? <Jumbotron.Slide>
+                <Jumbotron.SlideImg src={item.slideImg}/> 
+                <Jumbotron.SlideWrapper>
+                  <Jumbotron.SlideContent >{item.slideContent}</Jumbotron.SlideContent >
+                  <Jumbotron.SlideSubContent >{item.slideSubContent}</Jumbotron.SlideSubContent >
+                </Jumbotron.SlideWrapper>
+                <Jumbotron.SlideGifContent srcGif = {item.slideGif}/>
+            </Jumbotron.Slide> : null}
           </Jumbotron.Pane>
           
         </Jumbotron>
